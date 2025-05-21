@@ -1,5 +1,5 @@
-// 5.Write a java program for getting different colors through ArrayList interface and delete nth
-// element from the ArrayList object by using remove by index
+// 3. Write a java program for getting different colors through ArrayList interface and sort them
+// using Collections.sort( ArrayListObj)
 
 package assignment;
 
