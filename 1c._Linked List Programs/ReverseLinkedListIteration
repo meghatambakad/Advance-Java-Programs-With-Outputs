@@ -3,22 +3,29 @@
 
 package assignment;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Iterator;
 
 public class ReverseLinkedListIteration {
     public static void main(String[] args) {
-        // Create and initialize linked list
-        LinkedList<String> list = new LinkedList<>();
-        list.add("Red");
-        list.add("Green");
-        list.add("Blue");
+        // Create a LinkedList and add elements
+        LinkedList<String> colors = new LinkedList<>();
+        colors.add("Red");
+        colors.add("Blue");
+        colors.add("Green");
+        colors.add("Yellow");
+        colors.add("Orange");
 
-        // Create a descending iterator (reverse order)
-        Iterator<String> iterator = list.descendingIterator();
+        // Display the original list
+        System.out.println("Original list: " + colors);
 
-        // Print each element in reverse
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+        // Get the descending iterator
+        Iterator<String> reverseIterator = colors.descendingIterator();
+
+        // Iterate and print elements in reverse order
+        System.out.println("LinkedList in reverse order:");
+        while (reverseIterator.hasNext()) {
+            System.out.println(reverseIterator.next());
         }
     }
 }
