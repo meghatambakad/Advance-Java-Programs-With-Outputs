@@ -3,19 +3,23 @@
 
 package assignment;
 
-import java.util.*;
+import java.util.LinkedList;
 
 public class InsertAtEnd {
     public static void main(String[] args) {
-        // Create and initialize linked list
-        LinkedList<String> list = new LinkedList<>();
-        list.add("Red");
-        list.add("Green");
+        // Create a LinkedList and add some elements
+        LinkedList<String> colors = new LinkedList<>();
+        colors.add("Red");
+        colors.add("Blue");
+        colors.add("Green");
 
-        // Add "Pink" at the end of the list
-        list.offerLast("Pink");
+        // Display the original list
+        System.out.println("Original LinkedList: " + colors);
 
-        // Print the updated list
-        System.out.println("Updated List: " + list);
+        // Insert "Pink" at the end of the LinkedList
+        colors.offerLast("Pink");
+
+        // Display the updated list
+        System.out.println("LinkedList after adding 'Pink' at the end: " + colors);
     }
 }
